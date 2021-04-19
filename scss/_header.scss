@@ -1,0 +1,36 @@
+#main_section {
+  background-image: url(../assets/intro-bg.jpg);
+  height: 650px;
+  background-size: cover;
+  background-position: -500px 100px;
+}
+
+header {
+  border: $b3;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  //   background-color: white;
+  //   we would toggle the bg with javascript onclick of hamburger
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  border: $b2;
+
+  #nav_bar {
+    //display set to none by default. to be toggled with hamburger
+    display: none;
+    margin-top: 1rem;
+    ul li {
+      padding: 0.3rem 0;
+      color: $secondary-color;
+    }
+  }
+}
+
+#toggle_holder {
+  border: $b4;
+  align-self: baseline;
+}
