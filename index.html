@@ -10,16 +10,24 @@
   <body>
     <main>
       <section id="main_section">
-        <header>
+        <header class="header">
           <nav>
-            <div id="nav_logo">
+            <div>
               <img
                 src="assets/identity-full-light.png"
                 alt="logo"
-                style="width: 100px"
+                style="width: 100px;"
+                class="nav_logo"
               />
             </div>
-            <div id="nav_bar">
+              <img
+                src="assets/identity-full-dark.png"
+                alt="logo"
+                style="width: 100px"
+                 class="nav_logo_one"
+              />
+            </div>
+            <div class="nav_bar">
               <ul>
                 <li>Intro</li>
                 <li>Our Work</li>
@@ -31,10 +39,22 @@
             </div>
           </nav>
           <div id="toggle_holder">
-            <img src="assets/hamburger.png" alt="" />
+            <img src="assets/hamburger.png" alt="toggle menu" id="toggle"/>
           </div>
         </header>
+        <article class="main_text_holder">
+           <h1 id="main_text">A technology company dedicated to business growth.</h1>
+         <p id="main_text_description">Since our inception in 2001, we have helped SMEs as well as Large Organizations
+           scale and meet financial targets. >Since our inception in 2001, we have helped SMEs as well as Large Organizations
+           scale and meet financial targets.
+         </p>
+         <button id="main_home_button">Let's talk</button>
+        </article>
+        <section id="smooth_scroll">
+          <img src="assets/smooth-scroll.png" alt="arrow down" style="width: 30px;">
+        </section>
       </section>
     </main>
+    <script src="app.js"></script>
   </body>
 </html>

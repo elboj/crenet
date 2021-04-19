@@ -26,7 +26,7 @@ GLOBAL STYLES
 body {
   color: #333333;
   line-height: 1.5;
-  font-size: 1.1rem;
+  font-size: 0.85rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -41,9 +41,9 @@ h1,
 h2,
 h3,
 h4 {
-  text-transform: capitalize;
-  line-height: 1.25;
+  line-height: 1;
   margin-bottom: 0.75rem;
+  letter-spacing: -2.5px;
 }
 
 ul {
@@ -51,7 +51,7 @@ ul {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h2 {
@@ -71,8 +71,7 @@ main {
   height: 100%;
 }
 
-section,
-header {
+section {
   max-width: 100vw;
   height: auto;
   margin: 0 auto;
@@ -84,10 +83,10 @@ header {
   height: 650px;
   background-size: cover;
   background-position: -500px 100px;
+  color: white;
 }
 
-header {
-  border: 2px solid #25bb32;
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,6 +94,11 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1rem;
+  background-color: transparent;
+}
+
+.header_bg_toggle {
+  background-color: white;
 }
 
 nav {
@@ -105,22 +109,102 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 2px solid #e66b6b;
-}
-
-nav #nav_bar {
-  display: none;
-  margin-top: 1rem;
-}
-
-nav #nav_bar ul li {
-  padding: 0.3rem 0;
-  color: white;
 }
 
 #toggle_holder {
-  border: 2px solid #6be675;
   -ms-flex-item-align: baseline;
       align-self: baseline;
+}
+
+.nav_bar {
+  display: none;
+  color: white;
+  margin-top: 1rem;
+}
+
+.nav_bar ul li {
+  padding: 0.3rem 0;
+}
+
+.nav_bar_show {
+  display: block;
+  color: #333333;
+}
+
+.nav_logo {
+  display: block;
+}
+
+.nav_logo_one {
+  display: none;
+}
+
+.nav_logo_hide {
+  display: none;
+}
+
+.nav_logo_one_show {
+  display: block;
+}
+
+.main_text_holder {
+  padding: 1rem;
+}
+
+#main_text {
+  margin: 2.5rem 0;
+}
+
+#main_home_button {
+  margin-top: 2.5rem;
+  width: 120px;
+  height: 30px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  -webkit-box-shadow: 2px 4px white;
+          box-shadow: 2px 4px white;
+}
+
+#smooth_scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5.5rem;
+  -webkit-animation: bounce 0.8s infinite;
+          animation: bounce 0.8s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  50% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  100% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  50% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  100% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
 }
 /*# sourceMappingURL=main.css.map */
