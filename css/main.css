@@ -78,15 +78,13 @@ section {
 }
 
 /*================================*/
-#main_section {
-  background-image: url(../assets/intro-bg.jpg);
-  height: 650px;
-  background-size: cover;
-  background-position: -500px 100px;
-  color: white;
-}
-
+/**
+The logic used is to first set the header, then the main section.
+then use position and z index to move the section just underneath the
+header, while the header maintains a bg color of transparent
+*/
 .header {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,7 +92,9 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1rem;
+  position: absolute;
   background-color: transparent;
+  z-index: 2;
 }
 
 .header_bg_toggle {
@@ -109,11 +109,6 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-#toggle_holder {
-  -ms-flex-item-align: baseline;
-      align-self: baseline;
 }
 
 .nav_bar {
@@ -147,8 +142,25 @@ nav {
   display: block;
 }
 
+#toggle_holder {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+#main_section {
+  background-image: url(../assets/intro-bg.jpg);
+  height: 700px;
+  z-index: 1;
+  position: relative;
+  margin-top: 0px;
+  background-size: cover;
+  background-position: -500px 100px;
+  padding-top: 7rem;
+  color: white;
+}
+
 .main_text_holder {
-  padding: 1rem;
+  padding: 0.3rem 1rem;
 }
 
 #main_text {

@@ -1,17 +1,17 @@
-#main_section {
-  background-image: url(../assets/intro-bg.jpg);
-  height: 650px;
-  background-size: cover;
-  background-position: -500px 100px;
-  color: $secondary-color;
-}
+/**
+The logic used is to first set the header, then the main section.
+then use position and z index to move the section just underneath the
+header, while the header maintains a bg color of transparent
+*/
 
 .header {
-  // border: $b3;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  position: absolute;
   background-color: transparent;
+  z-index: 2;
   //   background-color: white;
   //   we would toggle the bg with javascript onclick of hamburger
 }
@@ -24,13 +24,6 @@ nav {
   display: flex;
   flex-direction: column;
   // border: $b2;
-}
-
-#toggle_holder {
-  // border: $b4;
-  align-self: baseline;
-  //see what the align-self basline does.. put a border and toggle it
-  //it makes sure all flex items are same height
 }
 
 .nav_bar {
@@ -48,6 +41,7 @@ nav {
   color: $primary-color;
 }
 
+//logo toggle properties
 .nav_logo {
   display: block;
 }
@@ -63,48 +57,9 @@ nav {
   display: block;
 }
 
-//Styling Home text and description
-
-.main_text_holder {
-  padding: 1rem;
-}
-
-#main_text {
-  margin: 2.5rem 0;
-}
-
-#main_home_button {
-  margin-top: 2.5rem;
-  width: 170px;
-  height: 40px;
-  border: 2px solid white;
-  background-color: transparent;
-  color: white;
-  box-shadow: 2px 4px white;
-}
-
-#main_home_button:hover {
-  box-shadow: 0px 0px white;
-  transition: 0.2s ease-in-out;
-}
-
-#smooth_scroll {
-  display: flex;
-  justify-content: center;
-  margin-top: 5.5rem;
-  animation: bounce 0.8s infinite;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(-10%);
-  }
-
-  50% {
-    transform: translateY(10%);
-  }
-
-  100% {
-    transform: translateY(-10%);
-  }
+#toggle_holder {
+  // border: $b4;
+  align-self: baseline;
+  //see what the align-self basline does.. put a border and toggle it
+  //it makes sure all flex items are same height
 }
