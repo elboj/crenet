@@ -155,12 +155,12 @@ nav {
   margin-top: 0px;
   background-size: cover;
   background-position: -500px 100px;
-  padding-top: 7rem;
+  padding-top: 5rem;
   color: white;
 }
 
 .main_text_holder {
-  padding: 0.3rem 1rem;
+  padding: 0rem 1.5rem;
 }
 
 #main_text {
