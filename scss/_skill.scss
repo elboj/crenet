@@ -1,0 +1,45 @@
+#skillset_section {
+  background: $alt-color;
+  margin-top: 5.5rem;
+}
+
+#skillset_holder {
+  padding: 4rem 1.5rem;
+}
+
+#skillset_heading {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1.5rem;
+}
+
+#skillset_desc {
+  text-align: center;
+}
+
+#skillset_flex {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+}
+
+.skillset_item {
+  margin: 1rem 0;
+
+  .item_heading {
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  .item {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    border-top: 1px solid $primary-color;
+  }
+
+  .bb {
+    border-top: 1px solid $primary-color;
+  }
+}
