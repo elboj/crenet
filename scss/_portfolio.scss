@@ -1,0 +1,64 @@
+#portfolio_section {
+  padding-top: 2.5rem;
+}
+#portfolio_scetion_holder {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+#portfolio_flex {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+
+  div img {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+
+  .caption {
+    font-size: 1.7rem;
+    font-weight: 700;
+    position: absolute;
+    color: white;
+    z-index: 3;
+    left: 3rem;
+  }
+}
+
+#c1 {
+  top: 69rem;
+}
+
+#c2 {
+  top: 86rem;
+}
+
+#c3 {
+  top: 102.8rem;
+}
+
+#c4 {
+  top: 120rem;
+}
+
+#c5 {
+  top: 137rem;
+}
+
+#c6 {
+  top: 153rem;
+}
+
+#c7 {
+  top: 170rem;
+}
+
+#c8 {
+  top: 188rem;
+}
+
+#c9 {
+  top: 204rem;
+}
