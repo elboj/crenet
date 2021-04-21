@@ -323,6 +323,57 @@ nav {
   margin-top: 2.5rem;
 }
 
+#skillset_section {
+  background: #f8f8f8;
+  margin-top: 5.5rem;
+}
+
+#skillset_holder {
+  padding: 4rem 1.5rem;
+}
+
+#skillset_heading {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1.5rem;
+}
+
+#skillset_desc {
+  text-align: center;
+}
+
+#skillset_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2.5rem;
+}
+
+.skillset_item {
+  margin: 1rem 0;
+}
+
+.skillset_item .item_heading {
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.skillset_item .item {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  border-top: 1px solid #333333;
+}
+
+.skillset_item .bb {
+  border-top: 1px solid #333333;
+}
+
 .default-padding, #drive_section_holder {
   padding: 0rem 1.5rem;
 }
