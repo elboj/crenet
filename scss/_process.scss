@@ -1,0 +1,55 @@
+#process_banner {
+  width: 100vw;
+  height: 150px;
+  //   border: $b2;
+  background-image: url(../assets/process-img.jpg);
+  background-size: contain;
+}
+
+#process_section_holder {
+  @extend .default-padding;
+  margin-top: 2.5rem;
+}
+
+#process_heading {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#process_desc {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+#process_flex {
+  display: flex;
+  flex-direction: column;
+
+  .process_flex_items {
+    margin-top: 2rem;
+  }
+}
+
+//styling process items
+
+.process_flex_items p:nth-child(1) {
+  color: #cccccc;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-bottom: 0.2rem;
+}
+
+.process_flex_items p:nth-child(2) {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-bottom: 0.7rem;
+}
+
+#process_banner_bottom {
+  background-image: url(../assets/image-block-1.jpg) !important ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 300px;
+  margin-top: 2.5rem;
+}

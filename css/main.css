@@ -374,7 +374,64 @@ nav {
   border-top: 1px solid #333333;
 }
 
-.default-padding, #drive_section_holder {
+#process_banner {
+  width: 100vw;
+  height: 150px;
+  background-image: url(../assets/process-img.jpg);
+  background-size: contain;
+}
+
+#process_section_holder {
+  margin-top: 2.5rem;
+}
+
+#process_heading {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#process_desc {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+#process_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#process_flex .process_flex_items {
+  margin-top: 2rem;
+}
+
+.process_flex_items p:nth-child(1) {
+  color: #cccccc;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-bottom: 0.2rem;
+}
+
+.process_flex_items p:nth-child(2) {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-bottom: 0.7rem;
+}
+
+#process_banner_bottom {
+  background-image: url(../assets/image-block-1.jpg) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 300px;
+  margin-top: 2.5rem;
+}
+
+.default-padding, #drive_section_holder, #process_section_holder {
   padding: 0rem 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */
