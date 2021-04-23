@@ -423,7 +423,7 @@ nav {
 }
 
 #process_banner_bottom {
-  background-image: url(../assets/image-block-1.jpg) !important;
+  background-image: url(../assets/image-block-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
