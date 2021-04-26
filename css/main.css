@@ -39,8 +39,7 @@ a {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   line-height: 1;
   margin-bottom: 0.75rem;
   letter-spacing: -2.5px;
@@ -431,7 +430,67 @@ nav {
   margin-top: 2.5rem;
 }
 
-.default-padding, #drive_section_holder, #process_section_holder {
+#people_section_holder {
+  margin-top: 2.5rem;
+}
+
+#people_section_holder h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#people_section_holder p {
+  text-align: center;
+}
+
+#people_flex {
+  margin-top: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 2px solid #f8f8f8;
+}
+
+#people_flex .people_flex_items {
+  margin-top: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid #f8f8f8;
+  padding-bottom: 0.9rem;
+}
+
+#people_flex .people_flex_items img {
+  -webkit-box-shadow: 2px 2px 10px #dadada;
+          box-shadow: 2px 2px 10px #dadada;
+  border-radius: 50%;
+  z-index: 2;
+  position: relative;
+}
+
+#people_flex .people_flex_items .p_info {
+  margin-top: 2.5rem;
+}
+
+.rounded {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  margin-top: -80px;
+  margin-left: 150px;
+  z-index: 3;
+  position: relative;
+  -webkit-box-shadow: 2px 2px 10px #dadada;
+          box-shadow: 2px 2px 10px #dadada;
+}
+
+.default-padding, #drive_section_holder, #process_section_holder, #people_section_holder {
   padding: 0rem 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */
