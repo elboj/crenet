@@ -596,7 +596,37 @@ input {
   border: none;
 }
 
-.default-padding, #drive_section_holder, #process_section_holder, #people_section_holder, #contact_section_holder {
+footer {
+  background-color: #000;
+  color: white;
+  max-width: 100vw;
+  height: auto;
+  padding-bottom: 5rem;
+}
+
+#footer_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5rem 0;
+}
+
+#footer_flex_left {
+  margin-bottom: 30px;
+}
+
+#footer_flex_right a {
+  display: block;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+.default-padding, #drive_section_holder, #process_section_holder, #people_section_holder, #contact_section_holder, #footer_holder {
   padding: 0rem 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */
