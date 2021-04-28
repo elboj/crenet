@@ -148,7 +148,7 @@ nav {
 
 #main_section {
   background-image: url(../assets/intro-bg.jpg);
-  height: 700px;
+  height: 650px;
   z-index: 1;
   position: relative;
   margin-top: 0px;
@@ -191,7 +191,7 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 5.5rem;
+  margin-top: 2rem;
   -webkit-animation: bounce 0.8s infinite;
           animation: bounce 0.8s infinite;
 }
@@ -226,13 +226,9 @@ nav {
   }
 }
 
-#portfolio_section {
-  padding-top: 2.5rem;
-}
-
-#portfolio_scetion_holder {
-  padding: 1.5rem;
+#portfolio_section_holder {
   text-align: center;
+  margin-top: 4rem;
 }
 
 #portfolio_flex {
@@ -246,55 +242,28 @@ nav {
   margin-top: 2.5rem;
 }
 
-#portfolio_flex div img {
+#portfolio-items {
   width: 100%;
-  position: relative;
-  z-index: 2;
+  height: auto;
 }
 
-#portfolio_flex .caption {
+.w_holder {
+  height: auto;
+}
+
+#work {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.caption {
+  position: relative;
+  bottom: 60px;
   font-size: 1.7rem;
   font-weight: 700;
-  position: absolute;
   color: white;
-  z-index: 3;
-  left: 3rem;
-}
-
-#c1 {
-  top: 69rem;
-}
-
-#c2 {
-  top: 86rem;
-}
-
-#c3 {
-  top: 102.8rem;
-}
-
-#c4 {
-  top: 120rem;
-}
-
-#c5 {
-  top: 137rem;
-}
-
-#c6 {
-  top: 153rem;
-}
-
-#c7 {
-  top: 170rem;
-}
-
-#c8 {
-  top: 188rem;
-}
-
-#c9 {
-  top: 204rem;
 }
 
 #drive_section {
@@ -364,20 +333,20 @@ nav {
 }
 
 .skillset_item .item {
-  margin-bottom: 0.5rem;
   font-size: 0.9rem;
-  border-top: 1px solid #333333;
+  border-top: none;
+  border-bottom: 1px solid #333333;
+  padding: 10px 0;
 }
 
-.skillset_item .bb {
-  border-top: 1px solid #333333;
+.process_banner {
+  width: 100%;
 }
 
-#process_banner {
+.process_img {
   width: 100vw;
-  height: 150px;
-  background-image: url(../assets/process-img.jpg);
-  background-size: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #process_section_holder {
@@ -422,11 +391,6 @@ nav {
 }
 
 #process_banner_bottom {
-  background-image: url(../assets/image-block-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 300px;
   margin-top: 2.5rem;
 }
 
@@ -626,7 +590,7 @@ footer {
   padding: 0.5rem 0;
 }
 
-.default-padding, #drive_section_holder, #process_section_holder, #people_section_holder, #contact_section_holder, #footer_holder {
+.default-padding, #portfolio_section_holder, #drive_section_holder, #process_section_holder, #people_section_holder, #contact_section_holder, #footer_holder {
   padding: 0rem 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */

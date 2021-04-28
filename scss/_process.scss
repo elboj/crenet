@@ -1,9 +1,15 @@
-#process_banner {
+.process_banner {
+  width: 100%;
+  // height: auto;
+  // border: $b2;
+  //   background-image: url(../assets/process-img.jpg);
+  //   background-size: contain;
+}
+
+.process_img {
   width: 100vw;
-  height: 150px;
-  //   border: $b2;
-  background-image: url(../assets/process-img.jpg);
-  background-size: contain;
+  // height: auto;
+  object-fit: cover;
 }
 
 #process_section_holder {
@@ -46,10 +52,5 @@
 }
 
 #process_banner_bottom {
-  background-image: url(../assets/image-block-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 300px;
   margin-top: 2.5rem;
 }

@@ -34,12 +34,9 @@
   }
 
   .item {
-    margin-bottom: 0.5rem;
     font-size: 0.9rem;
-    border-top: 1px solid $primary-color;
-  }
-
-  .bb {
-    border-top: 1px solid $primary-color;
+    border-top: none;
+    border-bottom: 1px solid $primary-color;
+    padding: 10px 0;
   }
 }

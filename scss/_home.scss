@@ -1,6 +1,6 @@
 #main_section {
   background-image: url(../assets/intro-bg.jpg);
-  height: 700px;
+  height: 650px;
   z-index: 1;
   position: relative;
   margin-top: 0px;
@@ -38,7 +38,7 @@
 #smooth_scroll {
   display: flex;
   justify-content: center;
-  margin-top: 5.5rem;
+  margin-top: 2rem;
   animation: bounce 0.8s infinite;
 }
 
