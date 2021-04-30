@@ -5,10 +5,9 @@ header, while the header maintains a bg color of transparent
 */
 
 .header {
-  width: 100%;
+  padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
   position: absolute;
   background-color: transparent;
   z-index: 2;
@@ -23,7 +22,6 @@ header, while the header maintains a bg color of transparent
 nav {
   display: flex;
   flex-direction: column;
-  // border: $b2;
 }
 
 .nav_bar {

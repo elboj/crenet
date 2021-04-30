@@ -13,7 +13,7 @@
 //Styling Home text and description
 
 .main_text_holder {
-  padding: 0rem 1.5rem;
+  @extend .default-padding;
 }
 
 #main_text {
