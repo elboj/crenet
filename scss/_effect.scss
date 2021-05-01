@@ -1,0 +1,10 @@
+//PORTFOLIO HOVER EFFECT
+#work:hover {
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+
+#portfolio-items:hover .caption {
+  bottom: 100px;
+  transition: 0.3s ease-in-out;
+}

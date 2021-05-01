@@ -63,7 +63,7 @@
   #portfolio_flex {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   #portfolio-items {
@@ -195,7 +195,7 @@
   //CLIENTS
   #client_flex {
     flex-direction: row;
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: hidden;
   }
 
