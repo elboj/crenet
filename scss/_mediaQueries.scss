@@ -176,20 +176,25 @@
   }
 
   //people
-  #people_flex {
+  .people_flex {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    // border: 2px solid blue;
+    justify-content: center;
   }
 
   .people_flex_items {
-    width: 50%;
+    width: 300px;
+    height: 300px;
     // border: $b2;
   }
 
-  .rounded {
-    margin-left: 230px;
+  .team {
+    width: 200px;
+    height: 200px;
+  }
+  .people_flex_items:hover .team {
+    width: 300px;
+    height: 300px;
   }
 
   //CLIENTS
@@ -267,10 +272,6 @@
     width: 80%;
   }
 
-  .rounded {
-    margin-left: 270px;
-  }
-
   #client_section {
     margin-top: 30px;
   }
@@ -324,14 +325,10 @@
   #smooth_scroll {
     margin-top: 6rem;
   }
-
-  .rounded {
-    margin-left: 340px;
-  }
 }
 
 @media screen and (min-width: 1440px) {
-  .rounded {
-    margin-left: 365px;
+  .people_flex_items {
+    width: 25%;
   }
 }

@@ -31,8 +31,19 @@
 
 .caption {
   position: relative;
-  bottom: 60px;
+  bottom: 75px;
   font-size: 1.7rem;
   font-weight: 700;
   color: white;
+}
+
+.fa-long-arrow-right {
+  position: relative;
+  color: red;
+  font-size: 2.3rem;
+  left: -4rem;
+  bottom: 95px;
+  color: white;
+  z-index: 7;
+  visibility: hidden;
 }

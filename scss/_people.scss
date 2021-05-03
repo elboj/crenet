@@ -7,49 +7,90 @@
     text-align: center;
   }
 
-  p {
+  #people_desc {
     text-align: center;
   }
 }
 
-#people_flex {
+.people_flex {
   margin-top: 3.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 2px solid $alt-color;
+  // border: 2px solid blue;
+}
 
-  .people_flex_items {
-    margin-top: 1.5rem;
-    text-align: center;
-    border-bottom: 2px solid $alt-color;
-    padding-bottom: 0.9rem;
+.people_flex_items {
+  margin-top: 1.5rem;
+  // border: 2px solid red;
+  width: 100%;
+  height: auto;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
 
-    img {
-      box-shadow: 2px 2px 10px rgb(218, 218, 218);
-      border-radius: 50%;
-      z-index: 2;
-      position: relative;
-    }
+.img-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 4;
+  // border: $b3;
+}
 
-    .p_info {
-      margin-top: 2.5rem;
-    }
-  }
+.team {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.txt_holder {
+  align-self: flex-start;
+  padding-left: 2rem;
 }
 
 .rounded {
-  width: 50px;
-  height: 50px;
-  background: white;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  margin-top: -80px;
-  margin-left: 150px;
-  z-index: 3;
-  position: relative;
-  box-shadow: 2px 2px 10px rgb(218, 218, 218);
+  position: absolute;
+  border: 2px solid white;
+  // background: #000;
+  z-index: 6;
+  display: none;
+}
+//HOVER EFFECT
+
+.people_flex_items:hover .team {
+  width: 300px;
+  height: 300px;
+  border-radius: 0;
+  opacity: 0.4;
+  object-fit: cover;
+  transition: 0.08s linear;
 }
 
-// .person_portfolio::after {
-//   content: url(../hamb);
-// }
+.people_flex_items:hover .img-holder {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(245, 246, 252, 0.52),
+    rgba(117, 19, 93, 0.73)
+  );
+  transition: 0.5s linear;
+  width: 300px;
+  height: 300px;
+  align-self: center;
+}
+
+.people_flex_items:hover .txt_holder {
+  margin-top: -2.8rem;
+  color: white;
+  z-index: 7;
+}
+
+.people_flex_items:hover .rounded {
+  display: block;
+  transition: 0.4s linear;
+  margin-top: 13px;
+}

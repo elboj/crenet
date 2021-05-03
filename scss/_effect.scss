@@ -8,3 +8,8 @@
   bottom: 100px;
   transition: 0.3s ease-in-out;
 }
+
+#portfolio-items:hover .fa-long-arrow-right {
+  visibility: visible;
+  transition: 0.3s linear;
+}
